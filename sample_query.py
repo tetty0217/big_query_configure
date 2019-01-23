@@ -1,8 +1,10 @@
 from google.cloud import bigquery
 
+from gbq_setting import BIGQUERY_CLIENT
+
 
 def query_stackoverflow():
-    client = bigquery.Client()
+    client = BIGQUERY_CLIENT
     query_job = client.query("""
         SELECT
           CONCAT(
