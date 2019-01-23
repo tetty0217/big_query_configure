@@ -3,7 +3,7 @@ from google.cloud import bigquery
 from gbq_setting import BIGQUERY_CLIENT
 
 
-def query_stackoverflow():
+def get_gbq_select():
     client = BIGQUERY_CLIENT
     query_job = client.query("""
         SELECT
@@ -23,4 +23,4 @@ def query_stackoverflow():
 
 
 if __name__ == '__main__':
-    query_stackoverflow()
+    get_gbq_select()

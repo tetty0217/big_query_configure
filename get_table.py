@@ -1,10 +1,10 @@
 from google.cloud import bigquery
 
-from gbq_setting import BIGQUERY_CLIENT, DATASET_REF
+from gbq_setting import BIGQUERY_CLIENT, DATASET_REF, TEST_TABLE_ID
 
 
-def get_table_content():
-    table_ref = DATASET_REF.table('test_table')
+def get_gbq_table():
+    table_ref = DATASET_REF.table(TEST_TABLE_ID)
     table = BIGQUERY_CLIENT.get_table(table_ref)
 
     print('table content ---------\n')
@@ -15,4 +15,4 @@ def get_table_content():
 
 
 if __name__ == '__main__':
-    get_table_content()
+    get_gbq_table()
