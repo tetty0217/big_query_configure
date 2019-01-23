@@ -68,3 +68,5 @@ fabric.properties
 
 # This project
 .idea/big_query_configure.iml
+
+*.pyc

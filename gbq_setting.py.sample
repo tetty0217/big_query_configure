@@ -3,10 +3,10 @@
 from google.cloud import bigquery
 
 # Instantiates a client
-BIGQUERY_CLIENT = bigquery.Client(project='')
+BIGQUERY_CLIENT = bigquery.Client(project='your_gcp_project_name')
 
 # The name for the new dataset
-DATASET_ID = ''
+DATASET_ID = 'your_project_dataset_id'
 
 # Prepares a reference to the new dataset
 DATASET_REF = BIGQUERY_CLIENT.dataset(DATASET_ID)
