@@ -19,6 +19,7 @@ pip install -r requirements.txt
 https://cloud.google.com/bigquery/docs/reference/libraries?hl=en
 
 ## 4. global variable setting command insert shell
+example:
 ```
 export GOOGLE_APPLICATION_CREDENTIALS="/Users/your_host/.../your_google_credential.json"
 ```
