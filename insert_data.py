@@ -18,7 +18,7 @@ def insert_gbq_data():
     # source_path = 'assets/test_table_assets.json'
 
     # WRITE_APPEND, WRITE_TRUNCATE, WRITE_EMPTY
-    job_config.write_disposition = bigquery.WriteDisposition.WRITE_APPEND
+    job_config.write_disposition = bigquery.WriteDisposition.WRITE_EMPTY
 
     with open(source_path, 'rb') as source_file:
         job = BIGQUERY_CLIENT.load_table_from_file(
